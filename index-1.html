@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f3eb">
+  <meta name="description" content="Undangan pernikahan Ilman Pebriady & Rinni Oktafiani, 7 Desember 2026. Dengan hormat kami mengundang Anda untuk hadir dan memberikan doa restu.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The Wedding of Ilman & Rinni">
+  <meta property="og:description" content="7 Desember 2026 • Desa Damar Wulan, Kecamatan Air Salek, Kabupaten Banyuasin">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&q=85">
+  <title>The Wedding of Ilman & Rinni</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <style>
+    :root{--cream:#f7f3eb;--paper:#fffdf8;--sage:#7c8c78;--sage-dark:#536451;--gold:#b69a62;--ink:#343a32;--muted:#77796f;--line:#e8e0d2}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.7}
+    button,input,textarea,select{font:inherit}a{color:inherit}.serif{font-family:"Playfair Display",serif}.section{padding:84px 20px}.wrap{width:min(100%,900px);margin:auto}.eyebrow{letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-size:.72rem;font-weight:600}.center{text-align:center}.title{font:500 clamp(2.2rem,7vw,3.5rem)/1.15 "Playfair Display",serif;margin:10px 0 18px}.sub{color:var(--muted);max-width:620px;margin:0 auto}.ornament{display:flex;align-items:center;justify-content:center;gap:12px;color:var(--gold);margin:22px auto}.ornament:before,.ornament:after{content:"";width:48px;height:1px;background:var(--gold)}
+    .cover{min-height:100svh;display:grid;place-items:center;padding:28px 18px;position:relative;overflow:hidden;background:linear-gradient(#27352b88,#27352b88),url("https://images.unsplash.com/photo-1519741497674-611481863552?w=1800&q=90") center/cover;color:#fff;text-align:center}
+    .cover:before{content:"";position:absolute;inset:16px;border:1px solid #ffffff80;pointer-events:none}.cover-inner{position:relative;max-width:700px}.cover .eyebrow{color:#e8d6ad}.cover h1{font:500 clamp(3.4rem,12vw,7rem)/.98 "Playfair Display",serif;margin:26px 0}.amp{font-style:italic;color:#e8d6ad}.cover-date{letter-spacing:.22em;font-size:.86rem}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:999px;padding:13px 25px;background:var(--sage-dark);color:white;text-decoration:none;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-2px);background:#40513e}.btn.light{background:#fff;color:var(--sage-dark);margin-top:26px}.btn.outline{background:transparent;border:1px solid var(--sage);color:var(--sage-dark)}.small{font-size:.86rem;color:var(--muted)}
+    .intro{background:var(--paper)}.verse{max-width:700px;margin:32px auto 0;padding:28px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-family:"Playfair Display",serif;font-size:1.2rem}.verse small{display:block;font: .8rem "DM Sans",sans-serif;color:var(--gold);margin-top:14px}
+    .couple-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:42px}.person{background:var(--paper);padding:32px 22px;border-radius:180px 180px 18px 18px;border:1px solid var(--line);text-align:center}.avatar{width:118px;height:118px;border-radius:50%;margin:0 auto 20px;background:linear-gradient(135deg,#e8e0d2,#c6d0c1);display:grid;place-items:center;color:var(--sage-dark);font:2.6rem "Playfair Display",serif}.person h3{font:500 2rem "Playfair Display",serif;margin:4px 0}.parents{font-size:.9rem;color:var(--muted);margin-top:12px}.and{align-self:center;text-align:center;font:italic 2.3rem "Playfair Display",serif;color:var(--gold)}
+    .details{background:#edf0e8}.detail-card{background:var(--paper);border:1px solid var(--line);padding:30px;border-radius:18px;max-width:640px;margin:34px auto 0;text-align:center}.detail-card h3{font:500 1.8rem "Playfair Display",serif;margin:5px}.detail-card p{margin:8px 0;color:var(--muted)}.detail-icon{font-size:1.8rem;color:var(--gold)}.countdown{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:34px auto}.timebox{min-width:82px;padding:17px 12px;background:var(--paper);border:1px solid var(--line);border-radius:12px}.timebox strong{display:block;font:2rem "Playfair Display",serif;color:var(--sage-dark)}.timebox span{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+    .rsvp-wrap{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:34px}.panel{background:var(--paper);border:1px solid var(--line);padding:26px;border-radius:16px}.panel h3{font:500 1.55rem "Playfair Display",serif;margin:0 0 14px}.field{margin:12px 0}.field label{display:block;font-size:.85rem;margin-bottom:5px;color:var(--sage-dark)}.field input,.field textarea,.field select{width:100%;border:1px solid var(--line);border-radius:9px;padding:11px 12px;background:#fffdf9;color:var(--ink)}.field textarea{min-height:90px;resize:vertical}.notice{font-size:.8rem;color:var(--muted);margin-top:12px}.guest-list{display:grid;gap:10px;margin-top:18px}.guest{border-bottom:1px solid var(--line);padding:10px 0}.guest b{color:var(--sage-dark)}.guest p{margin:3px 0;font-size:.9rem}.empty{color:var(--muted);font-size:.9rem}
+    .gift{background:var(--paper)}.gift-card{max-width:550px;margin:28px auto;padding:26px;border:1px dashed var(--gold);border-radius:16px;text-align:center}.gift-card p{color:var(--muted)}.footer{background:#354435;color:#f8f4eb;text-align:center;padding:60px 20px}.footer .eyebrow{color:#d8c49a}.footer .title{font-size:2.5rem}.music{position:fixed;right:16px;bottom:16px;z-index:5;border:1px solid var(--line);background:var(--paper);color:var(--sage-dark);width:48px;height:48px;border-radius:50%;box-shadow:0 4px 18px #0002;cursor:pointer}.reveal{opacity:0;transform:translateY(18px);transition:.7s}.reveal.show{opacity:1;transform:none}.admin{background:#f0eee7}.admin details{max-width:900px;margin:auto}.admin summary{cursor:pointer;color:var(--sage-dark);font-weight:600}.admin table{width:100%;border-collapse:collapse;font-size:.85rem}.admin td,.admin th{padding:8px;border-bottom:1px solid var(--line);text-align:left}
+    @media(max-width:650px){.section{padding:68px 18px}.couple-grid{grid-template-columns:1fr;gap:16px}.person{border-radius:130px 130px 16px 16px}.and{margin:-5px}.rsvp-wrap{grid-template-columns:1fr}.cover:before{inset:10px}.detail-card{padding:24px 18px}}
+  </style>
+</head>
+<body>
+  <header class="cover" id="home">
+    <div class="cover-inner">
+      <div class="eyebrow">Dengan memohon rahmat dan ridha Allah SWT</div>
+      <p class="serif" style="font-style:italic;font-size:1.35rem;margin:30px 0 0">The Wedding Of</p>
+      <h1>Ilman <span class="amp">&</span><br>Rinni</h1>
+      <div class="cover-date">07 · 12 · 2026</div>
+      <p style="margin:18px 0 0">Kepada Yth. Bapak/Ibu/Saudara/i</p>
+      <p id="guestName" class="serif" style="font-size:1.5rem;margin:0">Tamu Undangan</p>
+      <button class="btn light" id="openInvite">Buka Undangan <span>↓</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section intro center">
+      <div class="wrap reveal">
+        <div class="eyebrow">Assalamu’alaikum Warahmatullahi Wabarakatuh</div>
+        <h2 class="title">Bismillahirrahmanirrahim</h2>
+        <p class="sub">Dengan memohon rahmat dan ridha Allah SWT, kami bermaksud menyelenggarakan pernikahan putra-putri kami. Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu.</p>
+        <div class="verse" dir="rtl">وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةً ۗ</div>
+        <p class="small">“Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu ...”</p>
+        <div class="ornament">✦</div><p class="small">QS. Ar-Rum: 21</p>
+      </div>
+    </section>
+
+    <section class="section center">
+      <div class="wrap reveal">
+        <div class="eyebrow">Dengan penuh rasa syukur</div><h2 class="title">Kedua Mempelai</h2>
+        <p class="sub">Kami mengundang Anda untuk menjadi bagian dari hari bahagia kami.</p>
+        <div class="couple-grid">
+          <article class="person"><div class="avatar">I</div><div class="eyebrow">Mempelai Pria</div><h3>Ilman Pebriady</h3><div class="parents">Putra dari<br><b>Bapak Ma’as (Alm.)</b><br>dan <b>Ibu Samsiyar</b></div></article>
+          <div class="and">&</div>
+          <article class="person"><div class="avatar">R</div><div class="eyebrow">Mempelai Wanita</div><h3>Rinni Oktafiani</h3><div class="parents">Putri dari<br><b>Bapak Hadi Sunarto</b><br>dan <b>Ibu Sulasih</b></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section details center">
+      <div class="wrap reveal">
+        <div class="eyebrow">Catat tanggal bahagia kami</div><h2 class="title">Waktu & Tempat</h2>
+        <div class="countdown" id="countdown">
+          <div class="timebox"><strong id="days">--</strong><span>Hari</span></div><div class="timebox"><strong id="hours">--</strong><span>Jam</span></div><div class="timebox"><strong id="minutes">--</strong><span>Menit</span></div><div class="timebox"><strong id="seconds">--</strong><span>Detik</span></div>
+        </div>
+        <div class="detail-card">
+          <div class="detail-icon">♡</div><div class="eyebrow">Akad Nikah</div><h3>Senin, 7 Desember 2026</h3><p>07.00 WIB – selesai</p>
+          <div class="ornament">✦</div><div class="detail-icon">⌖</div><div class="eyebrow">Tempat Acara</div><h3>Desa Damar Wulan</h3><p>Kecamatan Air Salek, Kabupaten Banyuasin</p>
+          <p class="small">Resepsi: informasi waktu menyusul / mengikuti acara keluarga.</p>
+          <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Desa+Damar+Wulan%2C+Air+Salek%2C+Banyuasin">Lihat Lokasi di Google Maps ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section center">
+      <div class="wrap reveal">
+        <div class="eyebrow">Doa dan restu Anda berarti bagi kami</div><h2 class="title">Konfirmasi Kehadiran</h2>
+        <p class="sub">Mohon isi konfirmasi kehadiran dan tinggalkan doa terbaik untuk kedua mempelai.</p>
+        <div class="rsvp-wrap">
+          <form class="panel" id="rsvpForm">
+            <h3>RSVP</h3>
+            <div class="field"><label for="rsvpName">Nama</label><input id="rsvpName" required placeholder="Nama Anda"></div>
+            <div class="field"><label for="attendance">Konfirmasi</label><select id="attendance"><option value="Hadir">InsyaAllah hadir</option><option value="Tidak hadir">Mohon maaf, belum bisa hadir</option></select></div>
+            <div class="field"><label for="guests">Jumlah orang</label><select id="guests"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></div>
+            <button class="btn" type="submit">Kirim Konfirmasi</button><p class="notice" id="rsvpStatus">Konfirmasi tersimpan di perangkat ini. Hubungkan Supabase agar tersimpan online untuk semua perangkat.</p>
+          </form>
+          <div class="panel">
+            <h3>Buku Tamu & Doa</h3>
+            <form id="wishForm">
+              <div class="field"><label for="wishName">Nama</label><input id="wishName" required placeholder="Nama Anda"></div>
+              <div class="field"><label for="wishText">Ucapan dan doa</label><textarea id="wishText" required maxlength="500" placeholder="Tuliskan doa terbaik..."></textarea></div>
+              <button class="btn" type="submit">Kirim Ucapan</button>
+            </form>
+            <div class="guest-list" id="guestList"><p class="empty">Jadilah yang pertama mengirimkan doa.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gift center">
+      <div class="wrap reveal">
+        <div class="eyebrow">Tanda kasih</div><h2 class="title">Amplop Digital</h2>
+        <div class="gift-card"><div style="font-size:2rem;color:var(--gold)">♡</div><p>Doa restu dan kehadiran Anda merupakan hadiah terindah bagi kami. Jika berkenan memberikan tanda kasih secara digital, silakan hubungi keluarga mempelai untuk informasi rekening.</p><p class="small">Detail rekening belum dicantumkan.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="eyebrow">Merupakan kebahagiaan bagi kami</div><h2 class="title serif">Ilman <i>&</i> Rinni</h2>
+    <p>Terima kasih atas doa, restu, dan kehadiran Anda.</p>
+    <p class="serif" style="font-style:italic">Wassalamu’alaikum Warahmatullahi Wabarakatuh</p>
+    <button class="btn light" id="shareWhatsApp">Bagikan ke WhatsApp</button>
+    <p class="small" style="color:#d6d9d0;margin-top:28px">Ilman & Rinni · 07.12.2026</p>
+  </footer>
+
+  <button class="music" id="musicBtn" aria-label="Putar musik" title="Musik">♫</button>
+  <audio id="bgMusic" loop preload="none" src="https://cdn.pixabay.com/download/audio/2022/10/25/audio_946b6f7c35.mp3?filename=romantic-piano-124592.mp3"></audio>
+
+  <section class="section admin">
+    <details>
+      <summary>Area Admin (opsional — perlu konfigurasi Supabase)</summary>
+      <div class="panel" style="margin-top:15px">
+        <p class="small">Masukkan email dan kata sandi akun admin Supabase untuk melihat data RSVP. Buat akun admin secara manual di Supabase Auth dan nonaktifkan pendaftaran publik.</p>
+        <form id="adminForm"><div class="field"><label>Email admin</label><input id="adminEmail" type="email" required></div><div class="field"><label>Kata sandi</label><input id="adminPassword" type="password" required></div><button class="btn">Masuk</button></form>
+        <p id="adminStatus" class="notice"></p><div id="adminData"></div>
+      </div>
+    </details>
+  </section>
+
+<script>
+  // SETELAH MEMBUAT PROYEK SUPABASE, ISI DUA NILAI DI BAWAH INI.
+  const SUPABASE_URL = "GANTI_DENGAN_PROJECT_URL";
+  const SUPABASE_ANON_KEY = "GANTI_DENGAN_ANON_PUBLIC_KEY";
+  const db = (window.supabase && SUPABASE_URL.startsWith("https://") && !SUPABASE_URL.includes("GANTI_"))
+    ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
+
+  const params = new URLSearchParams(location.search);
+  const recipient = params.get("to");
+  if (recipient) document.getElementById("guestName").textContent = decodeURIComponent(recipient.replace(/\+/g," "));
+
+  document.getElementById("openInvite").addEventListener("click", () => {
+    document.querySelector(".intro").scrollIntoView({behavior:"smooth"});
+    const audio = document.getElementById("bgMusic");
+    audio.play().then(()=>document.getElementById("musicBtn").textContent="Ⅱ").catch(()=>{});
+  });
+  const music = document.getElementById("bgMusic"), musicBtn=document.getElementById("musicBtn");
+  musicBtn.addEventListener("click",()=>{if(music.paused){music.play().then(()=>musicBtn.textContent="Ⅱ").catch(()=>alert("Musik belum dapat diputar. Coba lagi."));}else{music.pause();musicBtn.textContent="♫";}});
+  document.getElementById("shareWhatsApp").addEventListener("click",()=>{
+    const url=location.href; const name=recipient||"Bapak/Ibu/Saudara/i";
+    const message=`Assalamu’alaikum ${name}, kami mengundang Anda untuk hadir di pernikahan Ilman Pebriady & Rinni Oktafiani pada 7 Desember 2026. Buka undangan: ${url}`;
+    window.open("https://wa.me/?text="+encodeURIComponent(message),"_blank","noopener");
+  });
+
+  const wedding = new Date("2026-12-07T07:00:00+07:00").getTime();
+  function tick(){let diff=wedding-Date.now();if(diff<0)diff=0;
+    const vals=[Math.floor(diff/86400000),Math.floor(diff%86400000/3600000),Math.floor(diff%3600000/60000),Math.floor(diff%60000/1000)];
+    ["days","hours","minutes","seconds"].forEach((id,i)=>document.getElementById(id).textContent=String(vals[i]).padStart(2,"0"));
+    if(wedding-Date.now()<=0)document.getElementById("countdown").innerHTML="<p>Hari bahagia telah tiba. Mohon doa restunya!</p>";
+  } tick(); setInterval(tick,1000);
+
+  const localKey="ilman-rinni-wishes";
+  function safeText(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+  async function loadWishes(){
+    let rows=[];
+    if(db){const {data,error}=await db.from("wishes").select("name,message,created_at").order("created_at",{ascending:false}).limit(30);if(!error)rows=data||[];}
+    else {try{rows=JSON.parse(localStorage.getItem(localKey)||"[]");}catch(e){}}
+    const list=document.getElementById("guestList");list.innerHTML="";
+    if(!rows.length){list.innerHTML='<p class="empty">Belum ada ucapan. Jadilah yang pertama!</p>';return;}
+    rows.forEach(r=>{const div=document.createElement("div");div.className="guest";div.innerHTML=`<b>${safeText(r.name)}</b><p>${safeText(r.message)}</p>`;list.appendChild(div);});
+  }
+  document.getElementById("wishForm").addEventListener("submit",async e=>{
+    e.preventDefault();const name=document.getElementById("wishName").value.trim(),message=document.getElementById("wishText").value.trim();
+    if(db){const {error}=await db.from("wishes").insert({name,message});if(error){alert("Ucapan belum terkirim. Periksa konfigurasi database.");return;}}
+    else {let rows=[];try{rows=JSON.parse(localStorage.getItem(localKey)||"[]");}catch(e){}rows.unshift({name,message});localStorage.setItem(localKey,JSON.stringify(rows.slice(0,50)));}
+    e.target.reset();loadWishes();alert(db?"Ucapan berhasil dikirim.":"Ucapan tersimpan di perangkat ini saja. Hubungkan Supabase agar dapat dilihat semua tamu.");
+  });
+  document.getElementById("rsvpForm").addEventListener("submit",async e=>{
+    e.preventDefault();const entry={name:document.getElementById("rsvpName").value.trim(),attendance:document.getElementById("attendance").value,guest_count:Number(document.getElementById("guests").value)};
+    if(db){const {error}=await db.from("rsvps").insert(entry);if(error){document.getElementById("rsvpStatus").textContent="Gagal mengirim. Periksa konfigurasi database.";return;}document.getElementById("rsvpStatus").textContent="Terima kasih, konfirmasi Anda berhasil dikirim.";}
+    else {let rows=[];try{rows=JSON.parse(localStorage.getItem("ilman-rinni-rsvps")||"[]");}catch(e){}rows.push({...entry,created_at:new Date().toISOString()});localStorage.setItem("ilman-rinni-rsvps",JSON.stringify(rows));document.getElementById("rsvpStatus").textContent="Tersimpan di perangkat ini saja. Hubungkan Supabase agar admin dapat melihatnya dari mana saja.";}
+    e.target.reset();
+  });
+  loadWishes();
+
+  document.getElementById("adminForm").addEventListener("submit",async e=>{
+    e.preventDefault();const status=document.getElementById("adminStatus"),out=document.getElementById("adminData");
+    if(!db){status.textContent="Supabase belum dikonfigurasi.";return;}
+    const {data:auth,error:loginError}=await db.auth.signInWithPassword({email:document.getElementById("adminEmail").value,password:document.getElementById("adminPassword").value});
+    if(loginError){status.textContent="Login gagal. Periksa akun admin.";return;}
+    const {data,error}=await db.from("rsvps").select("name,attendance,guest_count,created_at").order("created_at",{ascending:false});
+    if(error){status.textContent="Tidak dapat membaca RSVP. Periksa kebijakan RLS.";return;}
+    status.textContent=`Login berhasil sebagai ${auth.user.email}.`;
+    out.innerHTML="<h3>Daftar RSVP</h3><table><thead><tr><th>Nama</th><th>Kehadiran</th><th>Jumlah</th><th>Waktu</th></tr></thead><tbody>"+data.map(r=>`<tr><td>${safeText(r.name)}</td><td>${safeText(r.attendance)}</td><td>${r.guest_count}</td><td>${new Date(r.created_at).toLocaleString("id-ID")}</td></tr>`).join("")+"</tbody></table>";
+  });
+
+  const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("show");observer.unobserve(e.target);}}),{threshold:.12});
+  document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
